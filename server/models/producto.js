@@ -14,9 +14,20 @@ const ProductoSchema = new Schema({
 		type: Number,
 		required: [true, "El proveedor es obligatorio"],
 	},
-	urlImg: {
+	urlImagenes: {
+		type: Array,
+		required: [true, "El urlImagenes es obligatorio"],
+	},
+	caracteristicas: {
+		type: Array,
+		required: [true, "El proveedor es obligatorio"],
+	},
+	descripcion: {
 		type: String,
-		unique: true,
+		required: [true, "El proveedor es obligatorio"],
+	},
+	urlSeo: {
+		type: String,
 		required: [true, "El proveedor es obligatorio"],
 	},
 	fechaRegistro: {
